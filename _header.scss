@@ -1,0 +1,226 @@
+.header-bar {
+    display: flex;
+    background-color: black;
+    height: 75px;
+    min-width: 300px;
+    width: 100%;
+
+
+    .header-bar-box {
+        display: flex;
+        justify-content: space-between;
+        width: $width-box;
+        margin: 0 auto;
+    }
+
+    .menu_header-bar {
+        display: flex;
+        align-items: center;
+    }
+
+    .menu-ico {
+        width: 44px;
+        height: 38px;
+        margin-left: 33px;
+        background-image: url(pic/ico.svg);
+    }
+
+    .menu-ico-find {
+        width: 27px;
+        height: 27px;
+        margin-left: 33px;
+        background-image: url(pic/find.svg);
+    }
+
+
+
+    .menu-ico-account {
+        width: 29px;
+        height: 29px;
+        margin-left: 33px;
+        background-image: url(pic/account.svg);
+    }
+
+    .menu-ico-bascet {
+        width: 32px;
+        height: 29px;
+        margin-left: 33px;
+        background-image: url(pic/basket.svg);
+    }
+}
+
+.menu-ico-link {
+    width: 55px;
+    height: 23px;
+}
+
+.menu-ico-menu {
+    width: 35px;
+    height: 35px;
+    border: none;
+    margin-left: 23px;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-image: url(pic/menu.svg);
+    position: relative;
+}
+
+.menu-ico-menu::before {
+    position: absolute;
+    left: -55px;
+    top: 10px;
+    content: "Меню";
+    color: #F16D7F;
+    display: none;
+}
+
+/* Всплывающая подсказка
+.menu-ico-link:hover .menu-ico-menu::before {
+    display: block;
+}*/
+
+/*popup menu*/
+
+.popup-menu {
+    padding: 16px 34px;
+    position: absolute;
+    top: 75px;
+    right: 0px;
+    width: 232px;
+    height: 764px;
+    background-color: #FFFFFF;
+    display: none;
+    z-index: 55;
+}
+
+.menu-ico-menu:focus~.popup-menu {
+    display: block;
+}
+
+.menu-ico-link:hover .popup-menu {
+    display: block;
+}
+
+.popup-menu-close {
+    width: 12px;
+    height: 12px;
+    border: none;
+    margin-left: 203px;
+    background-color: #FFFFFF;
+    background-repeat: no-repeat;
+    background-image: url(pic/close.png);
+}
+
+
+.popup-menu-header {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    margin-bottom: 9px;
+    text-transform: uppercase;
+}
+
+.popup-menu-main {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+    text-transform: uppercase;
+    margin-top: 11px;
+}
+
+.popup-menu-item {
+    margin: 11px 0px 0px 10px;
+    color: #6F6E6E;
+}
+
+
+.poster {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    height: 764px;
+    width: 100%;
+    background-color: #F1E4E6;
+
+    .poster-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: $width-box;
+    }
+
+    .poster-picture {
+        width: $width-box/2-180px;
+        background-image: url(pic/poster.svg);
+        height: 100%;
+        background-position: -220px 34px;
+
+    }
+
+    .poster-text {
+        width: 355px;
+        color: #222222;
+        border-left: #F16D7F 12px solid;
+        padding-left: 10px;
+        text-transform: uppercase;
+
+        .poster-text1 {
+            font-weight: 900;
+            font-size: 48px;
+            line-height: 58px;
+
+        }
+
+        .poster-text2 {
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 38px;
+        }
+    }
+}
+
+span {
+    color: #F16D7F;
+}
+
+
+/*breadcrumbs*/
+.breadcrumbs {
+    display: flex;
+    background-color: #F8F3F4;
+    width: 100%;
+    height: 148px;
+}
+
+.breadcrumbs-box {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: $width-box;
+    margin: 0 auto;
+
+    .where-i {
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        color: #F16D7F;
+    }
+
+    .breadcrumbs-link,
+    .breadcrumbs-link-span {
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #636363;
+    }
+
+    .breadcrumbs-link-span {
+        font-weight: 700;
+        color: #F16D7F;
+    }
+}

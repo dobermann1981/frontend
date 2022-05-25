@@ -1,0 +1,39 @@
+$width-box: 1140px;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Lato';
+    font-style: normal;
+}
+
+@import "_header.scss";
+@import "_footer.scss";
+@import "_items.scss";
+
+
+/* MAIN*/
+/* filter*/
+.filter {
+    margin: 0 auto;
+    display: flex;
+    width: $width-box;
+    height: 132px;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+}
